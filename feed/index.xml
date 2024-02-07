@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>David Khachatryan</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 05 Feb 2024 00:38:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+	<item>
+		<title>Lightweight Exchange Management GUI Tool</title>
+		<link>/2024/02/04/hello-world/</link>
+					<comments>/2024/02/04/hello-world/#respond</comments>
+		
+		<dc:creator><![CDATA[kvhdavid]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2024 23:31:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=1</guid>
+
+					<description><![CDATA[In the realm of organizational IT shifts, the transition from on-premise Exchange to cloud solutions like Office 365 is a common journey. However, the process of decommissioning an Exchange server amid this evolution isn&#8217;t always straightforward. Microsoft provides various scenarios tailored to the specific needs of each environment, adding a layer of complexity to the [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="474" height="252" src="/wp-content/uploads/2024/02/1111.png" alt="" class="wp-image-13" srcset="/wp-content/uploads/2024/02/1111.png 474w, /wp-content/uploads/2024/02/1111-300x159.png 300w" sizes="(max-width: 474px) 100vw, 474px" /></figure>
+
+
+
+<p>In the realm of organizational IT shifts, the transition from on-premise Exchange to cloud solutions like Office 365 is a common journey. However, the process of decommissioning an Exchange server amid this evolution isn&#8217;t always straightforward. Microsoft provides various scenarios tailored to the specific needs of each environment, adding a layer of complexity to the decision-making process.</p>
+
+
+
+<p>This project specifically addresses a scenario where organizations choose to retain Azure AD Sync while aiming to decommission an Exchange server. The rationale behind this decision lies in the desire to uphold synchronization benefits, including maintaining uniform passwords across Active Directory users and Exchange Online mailboxes.</p>
+
+
+
+<p>In this particular context, the recommended method for decommissioning the last Exchange server involves installing Exchange Management Tools on any domain-joined computer and leveraging PowerShell for managing mailbox attributes and facilitating mailbox creation. While it&#8217;s technically possible to manually edit mailbox attributes through ADSI edit, this practice is discouraged due to the absence of safeguards against syntax errors that could potentially lead to data corruption and loss.</p>
+
+
+
+<p>To streamline post-decommission mailbox management, a user-friendly GUI tool has been developed. This tool serves as a graphical interface for efficiently handling mailbox attributes and performing mailbox operations, such as creation and removal. The overarching objective is to simplify what could otherwise be a cumbersome task involving lengthy PowerShell commands, making mailbox management after decommissioning a more accessible and straightforward process.</p>
+
+
+
+<p></p>
+
+
+
+<pre class="wp-block-code"><code><a href="https://github.com/kvhdavid/ExchangeManagementGUI">https://github.com/kvhdavid/ExchangeManagementGUI</a></code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2024/02/04/hello-world/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
